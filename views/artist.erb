@@ -1,0 +1,10 @@
+
+
+<ul>
+  <lh><h4><%= @artist_cds.at(0).artist() %></h4></lh>
+    <% @artist_cds.each() do |artist_cd| %>
+    <li><%= artist_cd.album() %></li>
+    <% end %>
+</ul>
+
+<a href="/">Return to main page</a>

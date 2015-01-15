@@ -5,6 +5,9 @@ class CD
 
   define_method(:initialize) do |attributes|
     @artist = attributes.fetch(:artist)
+    @artist = @artist.split('')
+    @artist.at(0).upcase!()
+    @artist = @artist.join('')
     @album = attributes.fetch(:album)
   end
 
